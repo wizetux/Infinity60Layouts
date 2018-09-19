@@ -22,9 +22,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * | Grv    |   1  |   2  |   3  |   4  |   5  | ~L2  |           |      |   6  |   7  |   8  |   9  |   0  | BkSp   |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * | Tab    |   '  |   ,  |   .  |   P  |   Y  | ~L1  |           | ~L1  |   f  |   g  |   c  |   r  |   l  |   /    |
+ * | Tab    |   '  |   ,  |   .  |   P  |   Y  | CAPS |           | ~L1  |   f  |   g  |   c  |   r  |   l  |   /    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * | CAPS/L1|   A  |   O  |   E  |   U  |   I  |------|           |------|   d  |   h  |   t  |   n  |   s  |   -    |
+ * | ~L1    |   A  |   O  |   E  |   U  |   I  |------|           |------|   d  |   h  |   t  |   n  |   s  |   -    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * | LShift |;/Ctrl|   Q  |   J  |   K  |   X  |      |           |      |   b  |   m  |   w  |   v  |z/Ctrl| RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -43,8 +43,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_ergodox(  // layer 0 : default
         // left hand
         KC_GRV,           KC_1,          KC_2,   KC_3,   KC_4,   KC_5,   TG(MINECRAFT),
-        KC_TAB,           KC_QUOT,       KC_COMM,KC_DOT, KC_P,   KC_Y,   MO(SYMB),
-        LT(SYMB,KC_CAPS), KC_A,          KC_O,   KC_E,   KC_U,   KC_I,
+        KC_TAB,           KC_QUOT,       KC_COMM,KC_DOT, KC_P,   KC_Y,   KC_CAPS,
+        MO(SYMB),         KC_A,          KC_O,   KC_E,   KC_U,   KC_I,
         KC_LSFT,          CTL_T(KC_SCLN),KC_Q,   KC_J,   KC_K,   KC_X,   KC_NO,
         KC_LCTL,          KC_LGUI,       KC_LALT,KC_NO, KC_NO,
                                               KC_UP,  KC_DOWN,
